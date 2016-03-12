@@ -1,0 +1,21 @@
+Matrice de numere complexe reprezentate ca structuri inlantuite (ca matrici rare si nu neaparat patratice):
+
+- clasa numar complex sa contina metode pentru: supraincarcarea operatorilor << si >>; suma a doua numere complexe, implementata prin supraincarcarea operatorului +; produsul a doua numere complexe, implementat prin supraincarcarea operatorului *;
+
+- clasa matrice sa fie prietena a clasei numar complex si sa contina metode pentru: supraincarcarea operatorilor << si >>, apelandu-le pe cele din clasa numar complex; 
+																					suma a doua matrici, implementata prin supraincarcarea operatorului + si pe baza functiei de supraincarcare a lui + din clasa numar complex; 
+																					produsul a doua matrici, implementat prin supraincarcarea operatorului * si pe baza functiilor de supraincarcare ale lui + si * din clasa numar complex; 
+																					determinantul unei matrici patratice, implementat tot cu ajutorul sumei si produsului de numere complexe; 
+																					inversa unei matrici patratice cu determinantul nenul, care sa foloseasca functiile descrise anterior;
+
+- supraincarcarea operatorilor << si >> pentru iesiri si intrari de obiecte, dupa indicatiile de mai jos, astfel incat sa fie permise (si ilustrate in program):
+
+- citirea de la tastatura si dintr-un fisier;
+
+- scrierea pe ecran sau intr-un fisier;
+
+- ilustrarea conceptelor de mostenire, functii virtuale si sabloane (template-uri)
+
+Din clasa Matrice sa se deriveze clasa Matrice_Patratica de ordin k, iar din aceasta sa se deriveze clasa Patratica_triunghiulara. Clasele derivate trebuie sa contina constructori parametrizati prin care sa se evidentieze 
+transmiterea parametrilor catre constructorul din clasa de baza, destructor si metode care sa verifice daca o matrice triunghiulara este diagonala, sau scalara. Functia de calcul a determinantului sa devina virtuala, astfel incat, 
+pentru matricile din clasa derivata, formula de calcul sa fie data de produsul elementelor de pe diagonala.
